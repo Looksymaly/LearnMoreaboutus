@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This is a comment lol -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn More</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
         
         body {
-            background-color: rgb(20, 20, 20);
+            background: linear-gradient(135deg, #141414, #1e1e1e);
             color: white;
             font-family: 'Montserrat', sans-serif;
             margin: 0;
@@ -16,14 +16,16 @@
         }
 
         header {
-            background-color: rgb(30, 30, 30);
+            background: linear-gradient(90deg, #222, #333);
             padding: 20px;
             text-align: center;
             color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
         }
 
         header h1 {
-            font-size: 36px;
+            font-size: 40px;
             margin: 0;
         }
 
@@ -31,9 +33,10 @@
             max-width: 900px;
             margin: 20px auto;
             padding: 20px;
-            background-color: rgb(40, 40, 40);
+            background: rgba(50, 50, 50, 0.8);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(255, 140, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
         }
 
         .content h2 {
@@ -44,28 +47,54 @@
         .content p {
             font-size: 18px;
             line-height: 1.6;
-            color: #bbb;
+            color: #ddd;
         }
 
         .content a {
             color: #1E90FF;
             text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
         }
 
         .content a:hover {
+            color: #FF8C00;
             text-decoration: underline;
         }
 
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        ul li:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
         footer {
-            background-color: rgb(30, 30, 30);
+            background: linear-gradient(90deg, #222, #333);
             text-align: center;
             padding: 10px;
             color: white;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
         }
 
         footer p {
             margin: 0;
             font-size: 14px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @media (max-width: 768px) {
@@ -96,12 +125,12 @@
     <div class="content">
         <h2>What is Noder?</h2>
         <p>
-            Noder is a powerful exploit that you can Open infinite yield, Dex 2.0, Set time to night, Set time to day, Realistic lighting, Unrealistic lighting... ext.
+            Noder is a powerful tool that provides advanced features such as infinite yield, Dex 2.0, lighting customization, and more.
         </p>
 
         <h2>Why Use Noder?</h2>
         <p>
-            Noder allows you to Hack games more easier.
+            Noder enhances your experience by offering unique features that allow seamless customization and performance.
         </p>
 
         <h2>Features</h2>
@@ -109,7 +138,7 @@
             <li>Fast and Efficient</li>
             <li>Cross-platform Support</li>
             <li>Easy Integration</li>
-            <li>Customizable</li>
+            <li>Customizable Options</li>
         </ul>
 
         <p>
